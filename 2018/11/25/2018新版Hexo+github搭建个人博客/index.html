@@ -128,7 +128,7 @@
 <meta property="og:image" content="https://cloudyunfan.github.io/images/master.png">
 <meta property="og:image" content="https://cloudyunfan.github.io/images/hexo.png">
 <meta property="og:image" content="https://cloudyunfan.github.io/images/next.png">
-<meta property="og:updated_time" content="2018-11-26T14:59:30.972Z">
+<meta property="og:updated_time" content="2018-11-26T15:09:52.463Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2018新版hexo+github搭建个人博客">
 <meta name="twitter:description" content="从学生时代开始就有做笔记和总结的习惯，以前的笔记都是在本子上，经常不知不觉就做了很多笔记，每次回头看到那么多工整漂亮（嗯，就是自恋&amp;gt;o&amp;lt;）的笔记成就感就油然而生。现在已经是信息时代了，购物也从线下搬到线上，想必笔记也应该如此。俗话说，“好记性不如烂笔头”，希望自己搭建的这个博客能够成为自己以后的笔记本。 本人博客预览：cloudyunfan@github.io 搭建环境：Windows">
@@ -483,7 +483,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-11-26 22:59:30" itemprop="dateModified" datetime="2018-11-26T22:59:30+08:00">2018-11-26</time>
+                <time title="修改时间：2018-11-26 23:09:52" itemprop="dateModified" datetime="2018-11-26T23:09:52+08:00">2018-11-26</time>
               
             
           </span>
@@ -551,7 +551,7 @@
 <p>在Repository name下填写yourname.github.io，Description 下填可以写一些描述，如图：</p>
 <p><img src="https://cloudyunfan.github.io/images/repo.png" alt="repo"></p>
 <p><strong>踩坑提醒：</strong></p>
-<p>图中的yourname必须为github的用户名，在这里就是cloudyunfan，否则在这里就无法用<a href="https://cloudyunfan.github.io直接访问，而只能用https://cloudyunfan.github.io/yourname.github.io访问。" target="_blank" rel="noopener">https://cloudyunfan.github.io直接访问，而只能用https://cloudyunfan.github.io/yourname.github.io访问。</a></p>
+<p>图中的yourname必须为github的用户名，在这里就是cloudyunfan，否则在这里就无法用<code>https://cloudyunfan.github.io</code>直接访问，而只能用<code>https://cloudyunfan.github.io/yourname.github.io</code>访问。</p>
 </li>
 <li><p>开启gh-pages功能</p>
 <p>点击界面右侧的Settings，可以看到库的setting页面，向下拖动，直到看见GitHub Pages</p>
@@ -564,7 +564,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd username.github.io</span><br><span class="line">$ echo &quot;Hello World&quot; &gt; index.html</span><br></pre></td></tr></table></figure>
 <p>把变更推送到github上：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git add --all</span><br><span class="line">$ git commit -m &quot;Initial commit&quot;</span><br><span class="line">$ git push -u origin master</span><br></pre></td></tr></table></figure>
-<p>接下来就是可以访问<a href="https://yourname.github.io页面啦，此页面出现的是index.html的Hello" target="_blank" rel="noopener">https://yourname.github.io页面啦，此页面出现的是index.html的Hello</a> World。如果可以正常访问页面，那么Github这边的配置则结束了。接下来讲解hexo这边的配置。</p>
+<p>接下来就是可以访问<code>https://yourname.github.io</code>页面啦，此页面出现的是index.html的Hello World。如果可以正常访问页面，那么Github这边的配置则结束了。接下来讲解hexo这边的配置。</p>
 </li>
 </ul>
 <h2 id="hexo配置"><a href="#hexo配置" class="headerlink" title="hexo配置"></a>hexo配置</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 <a href="http://daringfireball.net/projects/markdown/" target="_blank" rel="noopener">Markdown</a>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
@@ -613,7 +613,7 @@
 <p><code>hexo new post &quot;your title&quot;</code></p>
 <p>然后在我的电脑的目录下e:\hexo\blog\source\ _posts 将会看到 <code>your title.md</code>文件，用MarkDown编辑器编辑文章，运行生成、部署命令：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g   # 生成</span><br><span class="line">hexo d   # 部署</span><br></pre></td></tr></table></figure>
-<p>等价于<code>hexo d -g #在部署前先生成</code>命令。部署成功后访问<a href="https://yourname.github.io将可以看到新的文章。" target="_blank" rel="noopener">https://yourname.github.io将可以看到新的文章。</a></p>
+<p>等价于<code>hexo d -g #在部署前先生成</code>命令。部署成功后访问<code>https://yourname.github.io</code>将可以看到新的文章。</p>
 <h1 id="主题配置"><a href="#主题配置" class="headerlink" title="主题配置"></a>主题配置</h1><p>Hexo安装过后,默认的主题是landscape，有两个比较好的主题推荐给大家。 Yilia 主题是为 hexo 2.4+制作的主题， 崇尚简约优雅，以及极致的性能。NexT主题简洁美观，是目前Github上Star最高的Hexo主题，支持若干种不同的风格，这个主题确实很成熟，优化、配置、扩展很多都集成了，比较简单。下面以<strong>NexT</strong>主题为例配置主题。</p>
 <h2 id="配置NexT主题"><a href="#配置NexT主题" class="headerlink" title="配置NexT主题"></a>配置NexT主题</h2><ul>
 <li><p>安装主题</p>
@@ -632,7 +632,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s –debug</span><br></pre></td></tr></table></figure>
 <p>使用调试模式的好处是可以将详细消息记录到终端和<code>debug.log</code> 文件，在服务启动的过程，注意观察终端输出是否有异常信息，如果碰到问题，这些信息将帮助我们更好的定位错误。当终端输出：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">INFO Hexo is running at http://0.0.0.0:4000/. Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure>
-<p>我们就可以使用浏览器访问 <a href="http://localhost:4000，如果出现以下外观（NexT" target="_blank" rel="noopener">http://localhost:4000，如果出现以下外观（NexT</a> 默认的 Scheme是Muse），则说明主题安装成功：</p>
+<p>我们就可以使用浏览器访问<code>http://localhost:4000</code>，如果出现以下外观（NexT 默认的 Scheme是Muse），则说明主题安装成功：</p>
 <p><img src="https://cloudyunfan.github.io/images/next.png" alt="next"></p>
 </li>
 <li><p>hexo的scheme</p>
@@ -693,23 +693,13 @@
 </li>
 <li><p>设置头像</p>
 <p>编辑<strong>主题配置文件</strong>， 修改字段 <code>avatar</code>， 值设置成头像的链接地址。其中，头像的链接地址可以是：</p>
+<ul>
+<li>完整的互联网 URI：<code>http://example.com/avatar.png</code></li>
+<li>站点内的地址：将头像放置主题目录下的 <code>source/uploads/</code> （新建 uploads 目录若不存在）  配置为：<code>avatar: /uploads/avatar.png</code>或者 放置在 <code>source/images/</code> 目录下  配置为：<code>avatar: /images/avatar.png</code></li>
+</ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">avatar: </span><br><span class="line">  url: http://example.com/avatar.png</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<table>
-<thead>
-<tr>
-<th>完整的互联网 URI</th>
-<th><code>http://example.com/avatar.png</code></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>站点内的地址</strong></td>
-<td>将头像放置主题目录下的 <code>source/uploads/</code> （新建 uploads 目录若不存在）  配置为：<strong><code>avatar: /uploads/avatar.png</code></strong>或者 放置在 <code>source/images/</code> 目录下  配置为：<strong><code>avatar: /images/avatar.png</code></strong></td>
-</tr>
-</tbody>
-</table>
 <h2 id="添加插件"><a href="#添加插件" class="headerlink" title="添加插件"></a>添加插件</h2><p>为了我们的博客能够更好的被搜索引擎收录以及被其他人订阅，我们可以添加sitemap、baidusitemap和feed插件，切换到你本地的hexo 的blog目录，在命令行窗口，输入命令：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-feed -save</span><br><span class="line">$ npm install hexo-generator-sitemap -save</span><br><span class="line">$ npm install hexo-generator-baidusitemap -save</span><br></pre></td></tr></table></figure>
 <p>修改<strong>站点配置文件</strong>，增加以下内容：</p>
