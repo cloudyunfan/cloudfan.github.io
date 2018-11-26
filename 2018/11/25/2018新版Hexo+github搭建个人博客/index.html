@@ -128,7 +128,7 @@
 <meta property="og:image" content="https://cloudyunfan.github.io/images/master.png">
 <meta property="og:image" content="https://cloudyunfan.github.io/images/hexo.png">
 <meta property="og:image" content="https://cloudyunfan.github.io/images/next.png">
-<meta property="og:updated_time" content="2018-11-26T15:09:52.463Z">
+<meta property="og:updated_time" content="2018-11-26T15:16:20.864Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2018新版hexo+github搭建个人博客">
 <meta name="twitter:description" content="从学生时代开始就有做笔记和总结的习惯，以前的笔记都是在本子上，经常不知不觉就做了很多笔记，每次回头看到那么多工整漂亮（嗯，就是自恋&amp;gt;o&amp;lt;）的笔记成就感就油然而生。现在已经是信息时代了，购物也从线下搬到线上，想必笔记也应该如此。俗话说，“好记性不如烂笔头”，希望自己搭建的这个博客能够成为自己以后的笔记本。 本人博客预览：cloudyunfan@github.io 搭建环境：Windows">
@@ -483,7 +483,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-11-26 23:09:52" itemprop="dateModified" datetime="2018-11-26T23:09:52+08:00">2018-11-26</time>
+                <time title="修改时间：2018-11-26 23:16:20" itemprop="dateModified" datetime="2018-11-26T23:16:20+08:00">2018-11-26</time>
               
             
           </span>
@@ -646,16 +646,12 @@
 </ul>
 <p>​       目前NexT 支持的语言可以参考<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">NexT官网</a></p>
 <ul>
-<li><p>设置菜单</p>
-<ul>
 <li><p>设定菜单内容</p>
 <p>菜单配置包括三个部分，第一是菜单项（名称和链接），第二是菜单项的显示文本，第三是菜单项对应的图标。 NexT 使用的是 <a href="http://fontawesome.io/" target="_blank" rel="noopener">Font Awesome</a> 提供的图标， Font Awesome 提供了 600+ 的图标，可以满足绝大的多数的场景，同时无须担心在 Retina 屏幕下图标模糊的问题。</p>
 <p>编辑<strong>主题配置文件</strong>， 菜单内容的设置格式是：<code>item name: link</code>。其中 <code>item name</code>是一个名称，这个名称并不直接显示在页面上，她将用于匹配图标以及翻译。<code>||</code>运算符后面代表的是图标名称，如没有设置或者设置无效的 Font Awesome 图标名字，则会显示问号图标。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || home</span><br><span class="line">  about: /about/ || user</span><br><span class="line">  tags: /tags/ || tags</span><br><span class="line">  categories: /categories/ || th</span><br><span class="line">  archives: /archives/ || archive</span><br><span class="line">  schedule: /schedule/ || calendar</span><br><span class="line">  sitemap: /sitemap.xml || sitemap</span><br><span class="line">  commonweal: /404/ || heartbeat</span><br><span class="line">  psychology: /psych/</span><br></pre></td></tr></table></figure>
 <p>NexT 默认的菜单项有（<em>斜体</em>表示的页面要手动创建）</p>
-<p>| 键值       | 设定值                    | 显示文本（简体中文） |<br>| ———- | ————————- | ——————– |<br>| home       | <code>home: /</code>                 | 主页                 |<br>| archives   | <code>archives: /archives</code>     | 归档页               |<br>| categories | <code>categories: /categories</code> | <em>分类页</em>             |<br>| tags       | <code>tags: /tags</code>             | <em>标签页</em>             |<br>| about      | <code>about: /about</code>           | <em>关于页面</em>           |<br>| commonweal | <code>commonweal: /404.html</code>   | <em>公益 404</em>           |</p>
-</li>
-</ul>
+<p>| 键值 | 设定值 | 显示文本（简体中文） |<br>| ———- | ————————- | ——————– |<br>| home | <code>home: /</code> | 主页 |<br>| archives | <code>archives: /archives</code> | 归档页 |<br>| categories | <code>categories: /categories</code> | <em>分类页</em> |<br>| tags | <code>tags: /tags</code> | <em>标签页</em> |<br>| about | <code>about: /about</code> | <em>关于页面</em> |<br>| commonweal | <code>commonweal: /404.html</code> | <em>公益 404</em> |</p>
 </li>
 <li><p>设置菜单项的显示文本</p>
 <p>在第一步中设置的菜单的名称并不直接用于界面上的展示。Hexo 在生成的时候将使用 这个名称查找对应的语言翻译，并提取显示文本。这些翻译文本放置在 NexT 主题目录下的<code>languages/{language}.yml</code>文件</p>
