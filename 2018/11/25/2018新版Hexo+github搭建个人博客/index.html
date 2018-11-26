@@ -128,7 +128,7 @@
 <meta property="og:image" content="https://cloudyunfan.github.io/images/master.png">
 <meta property="og:image" content="https://cloudyunfan.github.io/images/hexo.png">
 <meta property="og:image" content="https://cloudyunfan.github.io/images/next.png">
-<meta property="og:updated_time" content="2018-11-26T15:16:20.864Z">
+<meta property="og:updated_time" content="2018-11-26T15:46:41.462Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2018新版hexo+github搭建个人博客">
 <meta name="twitter:description" content="从学生时代开始就有做笔记和总结的习惯，以前的笔记都是在本子上，经常不知不觉就做了很多笔记，每次回头看到那么多工整漂亮（嗯，就是自恋&amp;gt;o&amp;lt;）的笔记成就感就油然而生。现在已经是信息时代了，购物也从线下搬到线上，想必笔记也应该如此。俗话说，“好记性不如烂笔头”，希望自己搭建的这个博客能够成为自己以后的笔记本。 本人博客预览：cloudyunfan@github.io 搭建环境：Windows">
@@ -483,7 +483,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-11-26 23:16:20" itemprop="dateModified" datetime="2018-11-26T23:16:20+08:00">2018-11-26</time>
+                <time title="修改时间：2018-11-26 23:46:41" itemprop="dateModified" datetime="2018-11-26T23:46:41+08:00">2018-11-26</time>
               
             
           </span>
@@ -636,9 +636,36 @@
 <p><img src="https://cloudyunfan.github.io/images/next.png" alt="next"></p>
 </li>
 <li><p>hexo的scheme</p>
-<p>| Scheme | 样式                                                  |<br>| —— | —————————————————– |<br>| Muse   | 默认 Scheme，这是 NexT 最初的版本，黑白主调，大量留白 |<br>| Mist   | Muse 的紧凑版本，整洁有序的单栏外观                   |<br>| Pisces | 双栏 Scheme，小家碧玉似的清新                         |<br>| Gemini | 与Pisces相似，阴影效果不一样                          |</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># Schemes 注释掉不用的Schemes</span><br><span class="line">#scheme: Muse</span><br><span class="line">#scheme: Mist</span><br><span class="line">#scheme: Pisces</span><br><span class="line">scheme: Gemini</span><br></pre></td></tr></table></figure>
 </li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Scheme</th>
+<th>样式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Muse</td>
+<td>默认 Scheme，这是 NexT 最初的版本，黑白主调，大量留白</td>
+</tr>
+<tr>
+<td>Mist</td>
+<td>Muse 的紧凑版本，整洁有序的单栏外观</td>
+</tr>
+<tr>
+<td>Pisces</td>
+<td>双栏 Scheme，小家碧玉似的清新</td>
+</tr>
+<tr>
+<td>Gemini</td>
+<td>与Pisces相似，阴影效果不一样</td>
+</tr>
+</tbody>
+</table>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># Schemes 注释掉不用的Schemes</span><br><span class="line">#scheme: Muse</span><br><span class="line">#scheme: Mist</span><br><span class="line">#scheme: Pisces</span><br><span class="line">scheme: Gemini</span><br></pre></td></tr></table></figure>
+<ul>
 <li><p>语言、博客名字、站点描述、作者昵称设置</p>
 <p>编辑<strong>站点配置文件</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># Site</span><br><span class="line">title: 为梦想加油！！！ #博客名</span><br><span class="line">subtitle: 大柔非柔，至刚无刚</span><br><span class="line">description: 安而后能虑，虑而后能得 #站点描述可以是你喜欢的一句签名:)</span><br><span class="line">keywords:</span><br><span class="line">author: ** #昵称</span><br><span class="line">language: zh-CN #设置语言为简体中文</span><br><span class="line">timezone:</span><br></pre></td></tr></table></figure>
@@ -651,8 +678,50 @@
 <p>编辑<strong>主题配置文件</strong>， 菜单内容的设置格式是：<code>item name: link</code>。其中 <code>item name</code>是一个名称，这个名称并不直接显示在页面上，她将用于匹配图标以及翻译。<code>||</code>运算符后面代表的是图标名称，如没有设置或者设置无效的 Font Awesome 图标名字，则会显示问号图标。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || home</span><br><span class="line">  about: /about/ || user</span><br><span class="line">  tags: /tags/ || tags</span><br><span class="line">  categories: /categories/ || th</span><br><span class="line">  archives: /archives/ || archive</span><br><span class="line">  schedule: /schedule/ || calendar</span><br><span class="line">  sitemap: /sitemap.xml || sitemap</span><br><span class="line">  commonweal: /404/ || heartbeat</span><br><span class="line">  psychology: /psych/</span><br></pre></td></tr></table></figure>
 <p>NexT 默认的菜单项有（<em>斜体</em>表示的页面要手动创建）</p>
-<p>| 键值 | 设定值 | 显示文本（简体中文） |<br>| ———- | ————————- | ——————– |<br>| home | <code>home: /</code> | 主页 |<br>| archives | <code>archives: /archives</code> | 归档页 |<br>| categories | <code>categories: /categories</code> | <em>分类页</em> |<br>| tags | <code>tags: /tags</code> | <em>标签页</em> |<br>| about | <code>about: /about</code> | <em>关于页面</em> |<br>| commonweal | <code>commonweal: /404.html</code> | <em>公益 404</em> |</p>
 </li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>键值</th>
+<th>设定值</th>
+<th>显示文本（简体中文）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>home</td>
+<td><code>home: /</code></td>
+<td>主页</td>
+</tr>
+<tr>
+<td>archives</td>
+<td><code>archives: /archives</code></td>
+<td>归档页</td>
+</tr>
+<tr>
+<td>categories</td>
+<td><code>categories: /categories</code></td>
+<td><em>分类页</em></td>
+</tr>
+<tr>
+<td>tags</td>
+<td><code>tags: /tags</code></td>
+<td><em>标签页</em></td>
+</tr>
+<tr>
+<td>about</td>
+<td><code>about: /about</code></td>
+<td><em>关于页面</em></td>
+</tr>
+<tr>
+<td>commonweal</td>
+<td><code>commonweal: /404.html</code></td>
+<td><em>公益 404</em></td>
+</tr>
+</tbody>
+</table>
+<ul>
 <li><p>设置菜单项的显示文本</p>
 <p>在第一步中设置的菜单的名称并不直接用于界面上的展示。Hexo 在生成的时候将使用 这个名称查找对应的语言翻译，并提取显示文本。这些翻译文本放置在 NexT 主题目录下的<code>languages/{language}.yml</code>文件</p>
 <p>（<code>{language}</code> 为你所使用的语言）。</p>
