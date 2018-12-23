@@ -115,7 +115,7 @@
 <meta property="og:site_name" content="为梦想加油！！！">
 <meta property="og:description" content="YAML快速入门前言最近在学习微服务和Spring Cloud开发相关知识，在Spring Boot中，推荐使用properties或者YAML文件来完成配置，所以一开始学习使用的配置文件是properties文件，但是properties文件在表示层级关系和结构关系的方面有所欠缺，对于复杂的数据结构，YAML文件表示的清晰度会远远大于properties文件，所以我们使用YAML文件完成Spri">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-12-23T14:08:15.462Z">
+<meta property="og:updated_time" content="2018-12-23T14:12:50.803Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="为梦想加油！！！">
 <meta name="twitter:description" content="YAML快速入门前言最近在学习微服务和Spring Cloud开发相关知识，在Spring Boot中，推荐使用properties或者YAML文件来完成配置，所以一开始学习使用的配置文件是properties文件，但是properties文件在表示层级关系和结构关系的方面有所欠缺，对于复杂的数据结构，YAML文件表示的清晰度会远远大于properties文件，所以我们使用YAML文件完成Spri">
@@ -452,7 +452,7 @@
                 
               
 
-              <time title="创建时间：2018-12-23 16:13:56 / 修改时间：22:08:15" itemprop="dateCreated datePublished" datetime="2018-12-23T16:13:56+08:00">2018-12-23</time>
+              <time title="创建时间：2018-12-23 16:13:56 / 修改时间：22:12:50" itemprop="dateCreated datePublished" datetime="2018-12-23T16:13:56+08:00">2018-12-23</time>
             
 
             
@@ -491,6 +491,7 @@
 
       
         <h1 id="YAML快速入门"><a href="#YAML快速入门" class="headerlink" title="YAML快速入门"></a>YAML快速入门</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>最近在学习微服务和Spring Cloud开发相关知识，在Spring Boot中，推荐使用properties或者YAML文件来完成配置，所以一开始学习使用的配置文件是properties文件，但是properties文件在表示层级关系和结构关系的方面有所欠缺，对于复杂的数据结构，YAML文件表示的清晰度会远远大于properties文件，所以我们使用YAML文件完成Spring Cloud的配置。</p>
+<a id="more"></a>
 <p><strong>properties文件：</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">server.port: 8761</span><br><span class="line">eureka.client.registerWithEureka: false</span><br><span class="line">eureka.client.fetchRegistry: false</span><br><span class="line">eureka.client.serviceUrl.defaultZone: http://localhost:8761/eureka/</span><br></pre></td></tr></table></figure>
 <p><strong>YAML文件：</strong></p>
@@ -596,7 +597,7 @@
 <li><p><code>&lt;&lt;</code></p>
 <p>合并内容。主要和锚点配合使用，可以将一个锚点内容直接合并到一个对象中。示例：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">merge:</span><br><span class="line">  - &amp;CENTER &#123; x: 1, y: 2 &#125;</span><br><span class="line">  - &amp;LEFT &#123; x: 0, y: 2 &#125;</span><br><span class="line">  - &amp;BIG &#123; r: 10 &#125;</span><br><span class="line">  - &amp;SMALL &#123; r: 1 &#125;</span><br><span class="line">  </span><br><span class="line">sample1: </span><br><span class="line">    &lt;&lt;: *CENTER</span><br><span class="line">    r: 10</span><br><span class="line">    </span><br><span class="line">sample2:</span><br><span class="line">    &lt;&lt; : [ *CENTER, *BIG ]</span><br><span class="line">    other: haha</span><br><span class="line">    </span><br><span class="line">sample3:</span><br><span class="line">    &lt;&lt; : [ *CENTER, *BIG ]</span><br><span class="line">    r: 100</span><br></pre></td></tr></table></figure>
-<p>在<code>merge</code>中，定义了四个锚点，分别在<code>sample</code>中使用。<br> <code>sample1</code>中，<code>&lt;&lt;: *CENTER</code>意思是引用<code>{x: 1,y: 2}</code>，并且合并到<code>sample1</code>中，那么合并的结果为：</p>
+<p>在<code>merge</code>中，定义了四个锚点，分别在<code>sample</code>中使用。<br>​    <code>sample1</code>中，<code>&lt;&lt;: *CENTER</code>意思是引用<code>{x: 1,y: 2}</code>，并且合并到<code>sample1</code>中，那么合并的结果为：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sample1=&#123;r=10, y=2, x=1&#125;</span><br></pre></td></tr></table></figure>
 <p><code>sample2</code>中，<code>&lt;&lt;: [*CENTER, *BIG]</code> 意思是联合引用<code>{x: 1,y: 2}</code>和<code>{r: 10}</code>，并且合并到<code>sample2</code>中，那么合并的结果为：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sample2=&#123;other=haha, x=1, y=2, r=10&#125;</span><br></pre></td></tr></table></figure>
